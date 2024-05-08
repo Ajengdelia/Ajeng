@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+    <script
+     src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Form Register</h1>
+    <p>Silahkan Anda input Nama Anda, username dan password</p>
+    <hr />
+    <form action="">
+    <input type="text" placeholder="nama anda..."
+    id="nama_anda" />
+    <br>
+
+    <input type="text" placeholder="username..." 
+    id="username" />
+    <br>
+
+    <input type="password" placeholder="password..."/>
+    <br>
+
+    <button>Register</button>
+    </form>
+ </body>
+</html>
+
+<script>
+    $(function () {
+        // alert("JQuery sudah siap");
+        $("#nama_anda").keyup(function () {
+           // alert("Anda mengetik sesuatu");
+            Let Nama_Anda = $(this).val().toUpperCase();
+           // alert(Nama Anda adalah ${nama_anda});
+           $(this).val(nama_anda);
+        });
+
+        $("#username").keyup(function () {
+           // alert("Anda mengetik sesuatu");
+            Let username = $(this).val().toLowerCase();
+           // alert(Nama Anda adalah ${username});
+           $(this).val(username);
+        });
+    });
+</script>
